@@ -71,3 +71,52 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+#weatherInfo {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 60%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#weatherInfo h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#weatherInfo p {
+    font-size: 18px;
+    color: #555;
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* Error Message Styling */
+#weatherInfo p.error {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    #weatherForm input {
+        width: 200px;
+    }
+
+    #weatherForm button {
+        font-size: 14px;
+    }
+
+    #weatherInfo {
+        width: 90%;
+    }
+}
